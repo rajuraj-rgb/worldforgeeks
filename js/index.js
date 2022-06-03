@@ -22,9 +22,9 @@ function toggleTheme() {
 
             // Change the value of href attribute  
             // to change the css sheet. 
-            if (theme.getAttribute('href') == 'dark-mode.css') { 
-                theme.setAttribute('href', 'light-mode.css'); 
+            if (theme.getAttribute('href') == 'css/dark-theme.css') { 
+                theme.setAttribute('href', 'css/light-theme.css'); 
             } else { 
-                theme.setAttribute('href', 'dark-mode.css'); 
+                theme.setAttribute('href', 'css/dark-theme.css'); 
             }
 }

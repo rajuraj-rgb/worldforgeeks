@@ -20,7 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- We use this tag to make it visible to the search engines. -->
 				<meta name="robots"content="INDEX, FOLLOW">
 				<title>World for Geeks</title>
-				<link rel="stylesheet" href="css/style.css"></link>
+				<link id="theme" rel="stylesheet" href="css/dark-theme.css"></link>
 				<link rel="preconnect" href="https://fonts.googleapis.com">
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 				<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 			 
-				<nav class="navbar h-nav-resp">
+				<nav class="navbar h-nav-resp dark-mode light-mode">
 								<div class="logo-resp">
 												<h1>
 																World for Geeks
@@ -53,6 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<li><a href="#Contact Us">Contact Us</a></li>
 												<li><a href="#About">About</a></li>
 												<li><a href="blog/index.html">Blog</a></li>
+												<li id="darkMode-btn" class="btn-toggle DM-btn-bg" onclick="toggleTheme()">Dark Mode</li>
 								</ul>
 								<div class="burger container">
 												<div class="line bar1"></div>
@@ -60,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<div class="line bar3"></div>
 								</div>
 				</nav>
-				<section class="section1" id="Home">
+				<section class="section1 dark-mode light-mode" id="Home">
 												<div class="mainBox">
 																<h1 class="title">
 																World for Geeks
@@ -71,57 +72,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												</div>
 					</section>
 					<section class="yt-sec">  
-					    <div class="left">
+					    <div class="left dark-mode light-mode">
 					        <iframe width="98%" height="270" src="https://www.youtube.com/embed/Ya5jNrY51CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					    </div>
 					    <div class="right">
 					        <p>
 					            In this channel, I will upload how to videos, tutorials and many more tech related videos. If you are a geek, then you should definitely subscribe to my channel.
 					        </p>
-					        <button>
+					        <button class="dark-mode light-mode">
 					            <a href="https://youtube.com/c/WorldforGeeks?sub_confirmation=1">Subscribe</a>
 					        </button>
 					        <h3>
 					            Also follow us on:
 					        </h3>
 					        <ul>
-					            <li><a href=""><img src="../icons/instagram.png" alt="Instagram"></a></li>
-					            <li><a href=""><img src="../icons/facebook.png" alt="Facebook"></a></li>
-					            <li><a href=""><img src="../icons/twitter.png" alt="Twitter"></a></li>
+					            <li class="dark-mode light-mode"><a href="www.instagram.com/world4geeks"><img src="../icons/instagram.png" alt="Instagram"></a></li>
+					            <li class="dark-mode light-mode"><a href="https://m.facebook.com/profile.php?id=100064562063800&_rdr"><img src="../icons/facebook.png" alt="Facebook"></a></li>
+					            <li class="dark-mode light-mode"><a href="https://twitter.com/WorldforGeeks"><img src="../icons/twitter.png" alt="Twitter"></a></li>
 					        </ul>
 					    </div>
 					</section>
 					<section class="section2" id="Resources">
 									<div class="heading1">
-													<h2 class="title">
+													<h2 class="title dark-mode light-mode">
 																	Resources
 													</h2>
 									</div>
 									<div class="list">
 													<ul>
-																	<li><a href="https://worldforgeeksofficial.blogspot.com">MOD APKs</a></li>
-																	<li><a href="https://downloader.worldforgeeks.me">All-in-One Video Downloader</a></li>
+																	<li class="dark-mode light-mode"><a href="https://worldforgeeksofficial.blogspot.com">MOD APKs</a></li>
+																	<li class="dark-mode light-mode"><a href="https://downloader.worldforgeeks.me">All-in-One Video Downloader</a></li>
 													</ul>
 									</div>
-									<div class="notice">
+									<div class="notice dark-mode light-mode">
 													More resources and tools are coming soon...
 									</div>
 					</section>
 					<section class="section3" id="Contact Us">
-									<div class="heading2">
+									<div class="heading2 dark-mode light-mode">
 													<h2>
 																	Contact Us
 													</h2>
 									</div>
 									<form class="form" action="contact.php" method="post">
-													<input type="text" name="Name" id="Name" placeholder="Name">
-													<input type="text" name="Email" id="Email" placeholder="Email">
-													<input type="text" name="Subject" id="Subject" placeholder="Subject">
-													<textarea class="content" id="Content" name="Content" placeholder="Write something.."></textarea>
+													<input type="text" name="Name" id="Name" placeholder="Name" class="dark-mode light-mode">
+													<input type="text" name="Email" id="Email" placeholder="Email" class="dark-mode light-mode">
+													<input type="text" name="Subject" id="Subject" placeholder="Subject" class="dark-mode light-mode">
+													<textarea class="content dark-mode light-mode" id="Content" name="Content" placeholder="Write something.."></textarea>
 													<input type="submit" value="Submit" name='send'>
 									</form>
 					<section class="section4" id="About">
-									<div class="heading3">
+									<div class="heading3 dark-mode light-mode">
 													<h2>
 																	About
 													</h2>
@@ -137,6 +138,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 													Copyright &copy; 2022 worldforgeeks.me - All rights reserved
 									</p>
 					</footer>
-					<script src="js/resp.js"></script>
+					<script src="js/index.js"></script>
 </body>
 </html>

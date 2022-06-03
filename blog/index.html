@@ -7,7 +7,7 @@
 				<meta name="description" content="Here you will get all the necessary tools and evrything you use in your daily life on your devices.">
 				<meta name="keywords" content="worldforgeeks, World for Geeks, world for geeks, wfg, world for geeks youtube, internet tools, youtube video downloader, instagram video downloader, facebook video downloader, world for geeks official website, world for geeks official, worldforgeeks blog, seo tools">
 				<title>World for Geeks:Blog</title>
-				<link rel="stylesheet" href="styles.css"></link>
+				<link id="theme" rel="stylesheet" href="dark-mode.css"></link>
 				<link rel="preconnect" href="https://fonts.googleapis.com">
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 				<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -22,44 +22,35 @@
 				<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-				<nav class="navbar h-nav-resp">
+				<nav class="navbar h-nav-resp dark-mode light-mode">
 								<div class="logo-resp">
 												<h1>
 																World for Geeks
 												</h1>
 								</div>
-								<div class="left-navbar v-class-resp">
-												<div class="logo">
-																<img src="../images/logo.png" alt="">
-												</div>
-												<div class="nav-item">
-																<a href="../index.html">Home</a>
-												</div>
-								</div>
-								<!-- <div class="right-navbar v-class-resp">
-												<input type="search" name="search" id="search" placeholder="Search">
-												<button class="search-btn" onkeyup="search()">Search</button>
-								</div>-->
+								<ul class="nav-list v-class-resp">
+												<div class="logo"><img src="../images/logo.png" alt="logo"></img></div>
+												<li><a href="#Home">Home</a></li>					<li id="darkMode-btn" class="btn-toggle DM-btn-bg" onclick="toggleTheme()">Dark Mode</li>
+								</ul>
 								<div class="burger container">
 												<div class="line bar1"></div>
 												<div class="line bar2"></div>
 												<div class="line bar3"></div>
 								</div>
 				</nav>
-				<header>
-								<h1>
-												World for Geeks
-								</h1>
-								<h2>
-												BLOG
-								</h2>
-								<h3 class="tagline">
-												Infinite possibilities
-								</h3>
-				</header>
-				<hr>
+				<section class="section1 dark-mode light-mode" id="Home">
+												<div class="mainBox">
+																<h1 class="title">
+																World for Geeks
+																</h1>
+																<h4 class="tagLine">
+																Infinite Possibilities
+																</h4>
+												</div>
+                </section>
+                <hr>
 				<section class="articles">
-								<div id="latest-posts">
+								<div id="latest-posts" class="dark-mode light-mode">
 												<h3>
 												Latest posts
 												</h3>
@@ -93,6 +84,12 @@
 												</p>
 								</div>
 				</section>
+                <footer class="background">
+                    <p class="text-footer">
+                        Copyright &copy; 2022 worldforgeeks.me - All rights reserved
+                    </p>
+                </footer>
 				<script src="blog.js"></script>
+				
 </body>
 </html>
