@@ -28,3 +28,19 @@ function toggleTheme() {
                 theme.setAttribute('href', 'css/dark-theme.css'); 
             }
 }
+
+var elements = document.getElementsByClassName('child');
+
+for (var i = 0; i < elements.length; i++) {
+    elements[i].onclick = function() {
+        
+        var el = elements[0];
+        while (el) {
+            if (el.tagName === 'LI') {
+                el.classList.remove('nav-act-back');
+            }
+            el = el.nextSibling;
+        }
+        this.classList.add('nav-act-back');
+    }
+}

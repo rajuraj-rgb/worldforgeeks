@@ -4,6 +4,7 @@
 }
 body{
 				background-color: #303139;
+				user-select: none;
 }
 html{
 				scroll-behavior: smooth;
@@ -27,6 +28,62 @@ html{
     border-radius: 10px;
 }
 
+.btn span { 
+
+        position: absolute; 
+
+        border-radius: 50%; 
+
+        /* To make it round */
+
+        background-color: rgba(0, 0, 0, 0.3); 
+
+  
+
+        width: 100px; 
+
+        height: 100px; 
+
+        margin-top: -50px; 
+
+        /* for positioning */
+
+        margin-left: -50px; 
+
+  
+
+        animation: ripple 1s; 
+
+        opacity: 0; 
+
+    } 
+
+  
+
+    /* Add animation */
+
+    @keyframes ripple { 
+
+        from { 
+
+            opacity: 1; 
+
+            transform: scale(0); 
+
+        } 
+
+  
+
+        to { 
+
+            opacity: 0; 
+
+            transform: scale(10); 
+
+        } 
+
+    }
+
 .logo{
 				width: 20%;
 				display: flex;
@@ -47,6 +104,16 @@ html{
 				top: 0px;
                 -webkit-border-radius: 27px;
                 border-radius: 15px;
+}
+.parent{
+    overflow: hidden;
+}
+.nav-act-back{
+    background-color: #5fc054;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 .logo-resp{
 				display: none;
@@ -88,10 +155,6 @@ html{
 				background-color: #fff007;
   color: black;
 }*/
-.nav-list li a:active{
-				background-color: #5fc054;
-				color: white;
-}
 .section1{
 				display: flex;
 				height: 500px;
@@ -402,7 +465,7 @@ background: red;
 								display: flex;
 				}
 				.navbar{
-								height: 370px;
+								height: 380px;
 								justify-content: center;
 								transition: all 0.3s ease-out;
 				}
@@ -410,7 +473,8 @@ background: red;
 								margin-top: 20px;
 								flex-direction: column;
 								justify-content: center;
-								transition: all 0.1s ease-in-out;
+							    margin-top: 30px;
+							 transition: all 0.1s ease-in-out;
 				}
 				.logo{
 								width: 50%;
@@ -450,3 +514,5 @@ background: red;
                     margin-left: -15px;
                 }
 }
+
+
